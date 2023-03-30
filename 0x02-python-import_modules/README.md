@@ -1,1 +1,1 @@
-Completed project tasks for 0x02. Python - import & modules
+completed tasks for 0x02. Python - import & modules
