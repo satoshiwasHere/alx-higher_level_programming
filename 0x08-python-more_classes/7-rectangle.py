@@ -87,10 +87,10 @@ class Rectangle:
         for column in range(self.__height):
             for row in range(self.__width):
                 try:
-                    recta += str(sef.print_symbol)
+                    recta += str(self.print_symbol)
                 except Exception:
                     recta += type(self).print_symbol
-            if column is not self.__height - 1:
+            if column < self.__height - 1:
                 recta += "\n"
         return (recta)
 
