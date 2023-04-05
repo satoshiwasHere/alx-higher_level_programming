@@ -89,8 +89,8 @@ class Rectangle:
                 try:
                     recta += str(self.print_symbol)
                 except Exception:
-                    recta += type(self).print_symbol
-            if column < self.__height - 1:
+                    recta += type(sielf).print_symbol
+            if column is not self.__height - 1:
                 recta += "\n"
         return (recta)
 
