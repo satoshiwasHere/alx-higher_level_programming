@@ -82,7 +82,7 @@ class Rectangle:
             if column < self.__height - 1:
                 recta += "\n"
         return (recta)
-    
+
     def __repr__(self):
         """
         special method to represent the class as a string
