@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module gives access to a set of attributes and methods that can be used with an object.
+This module provides access to an object's attributes/methods.
 """
 
 
