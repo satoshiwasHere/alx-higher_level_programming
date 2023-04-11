@@ -8,7 +8,4 @@ def is_kind_of_class(obj, a_class):
     """
     checks if object is a subclass of given class, not the class itself.
     """
-    if issubclass(obj, a_class) and not isinstance(obj, a_class):
-        return True
-    else:
-        return False
+    return issubclass(obj.__class__, a_class)
