@@ -2,14 +2,17 @@
 """
 This library adds arguments to python list and saves them in a file
 '"""
-import json
+
+import sys
 
 if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        __import__('6-load_from_json_file').load_from_json_file
+
     try:
-        with open('add_item.json', 'r') as fn:
-            items = json.load(fn)
+        list = load_from_json_file("add_item.json")
     except FileNotFoundError:
-        items = []
-    items.extend(sys.argv[1:])
-    with open('add_item.json', 'w') as fn:
-        json.dump(items, fn)
+        list = []
+    list.extend(sys.argv[1:])
+    save_to_json_file(list, "add_item.json")
