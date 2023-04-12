@@ -7,7 +7,7 @@ import json
 if __name__ == "__main__":
     try:
         with open('add_item.json', 'r') as fn:
-            items = json.load(f)
+            items = json.load(fn)
     except FileNotFoundError:
         items = []
     items.extend(sys.argv[1:])
