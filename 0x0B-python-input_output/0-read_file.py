@@ -8,5 +8,5 @@ def read_file(filename=""):
     """
     Displays the text in a UTF8 file.
     """
-    with open(filename, encoding="utf-8") as fn:
-        print(fn.read(), end="")
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
