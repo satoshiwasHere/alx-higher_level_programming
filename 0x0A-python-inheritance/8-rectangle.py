@@ -16,6 +16,6 @@ class Rectangle(BaseGeometry):
         creates a new instance of the Rectangle class,`
         """
         self.integer_validator("width", width)
+        self.__width = width
         self.integer_validator("height", height)
         self.__height = height
-        self.__width = width
