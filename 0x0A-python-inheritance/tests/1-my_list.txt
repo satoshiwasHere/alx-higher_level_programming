@@ -1,0 +1,15 @@
+import unittest
+
+from my_list import MyList
+
+
+class MyListTestCase(unittest.TestCase):
+
+    def test_print_sorted(self):
+        my_list = MyList([3, 2, 1])
+        my_list.print_sorted()
+        self.assertEqual(my_list, [1, 2, 3])
+
+
+if __name__ == '__main__':
+    unittest.main()
