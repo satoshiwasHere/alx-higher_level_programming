@@ -3,11 +3,13 @@
 -- ordered in descending rating.
 
 SELECT `name`, SUM(`rate`) AS `rating`
-  FROM `tv_genres` AS g
-       INNER JOIN `tv_show_genres` AS s
-       ON s.`genre_id` = g.`id`
+  FROM `tv_genres` AS gn
+       INNER JOIN `tv_show_genres` AS sh
+       ON sh.`genre_id` = gn.`id`
 
-       INNER JOIN `tv_show_ratings` AS r
-       ON r.`show_id` = s.`show_id`
- GROUP BY `name`
- ORDER BY `rating` DESC;
+       INNER JOIN `tv_show_ratings` AS sr
+       ON sr.`show_id` = sh.`show_id`
+ GROUP BY
+`name`
+ ORDER BY
+`rating` DESC;
