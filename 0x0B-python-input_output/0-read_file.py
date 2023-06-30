@@ -4,7 +4,7 @@ function that opens a file and read its content
 """
 
 
-def read_file(filename=""):
+def read_file(filename= str = "") -> None:
     """
     Prints UTF-8 file contents
     """

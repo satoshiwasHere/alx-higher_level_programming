@@ -13,7 +13,7 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """
-        creates a new instance of the Rectangle class,`
+        creates a new instance of the Rectangle class
         """
         self.integer_validator("width", width)
         self.__width = width
